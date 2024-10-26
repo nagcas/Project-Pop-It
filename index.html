@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Meta tag per la codifica dei caratteri -->
+    <meta charset="UTF-8">
+    <!-- Meta tag per il responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NOT_A_BUBBLE.COM è un negozio online specializzato in Pop It, il giocattolo antistress più popolare. Offriamo una vasta gamma di forme e colori, dalle versioni quadrate a quelle tematiche Among Us.">
+    <meta name="keywords" content="pop it, giocattoli antistress, bubble pop, giochi sensoriali, pop it among us, pop it quadrato, pop it rotondo, giochi antistress, giocattoli bambini">
+    <meta name="author" content="Gianluca Chiaravalloti">
+    <!-- Collegamento al foglio di stile delle icone Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Collegamento al foglio di stile personalizzato -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Importa font da google -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <!-- Titolo della pagina -->
+    <title>NOT_A_BUBBLE.COM</title>
+</head>
+<body>
+    <!-- Inizio Header/Barra di navigazione -->
+    <header>
+        <!-- Contenitore del logo -->
+        <div class="content-logo">
+            <p class="logo">NOT_A_BUBBLE.COM</p>
+        </div>
+        <!-- Pulsante per aprire il menu mobile -->
+        <button class="open-menu" id="open"><i class="bi bi-list"></i></button>
+        <!-- Menu di navigazione -->
+        <nav class="nav" id="nav">
+            <!-- Pulsante per chiudere il menu mobile -->
+            <button class="close-menu" id="close"><i class="bi bi-x-lg"></i></button>
+            <!-- Lista dei link di navigazione -->
+            <ul class="nav-list">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SALE</a></li>
+                <li><a href="#">CONCATS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sezione Hero (principale) -->
+    <section id="hero">
+        <div class="container">
+            <!-- Contenuto informativo principale -->
+            <div class="info">
+                <h1>POP IT!</h1>
+                <p>Best Antistress Toy is the Endless toy bubble wrap!</p>
+                <button class="btn-buy">BUY</button>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Sezione About (Chi siamo) -->
+    <section class="about">
+        <div class="content-about">
+            <h3>What is Pop it exactly</h3>
+            <p>This is a child's game, in which the process can be compared to the bursting of a bubble wrap. But unlike film, pop-it can be pressed with the same characteristic sensations and sounds "endlessly": dozens of silicone bubbles are simply squeezed out in the other direction.</p>
+        </div>
+    </section>
+
+    <!-- Sezione principale con prodotti -->
+    <main>
+        <!-- Area di selezione prodotti -->
+        <div class="choose">
+            <h3 class="title-choose">Choose your Pop-It!</h3>
+            <!-- Griglia dei prodotti -->
+            <div class="row">
+                <!-- Primo prodotto: Pop-it quadrato -->
+                <div class="card">
+                    <img src="./images/square.png" alt="pop-it square">
+                    <p class="title_card">Multicolored square</p>
+                    <button class="btn-card-buy">BUY</button>
+                </div>
+                <!-- Secondo prodotto: Pop-it Among Us -->
+                <div class="card">
+                    <img src="./images/amongus.png" alt="pop-it amongus">
+                    <p class="title_card">Multicolored amongus</p>
+                    <button class="btn-card-buy">BUY</button>
+                </div>
+                <!-- Terzo prodotto: Pop-it rotondo -->
+                <div class="card">
+                    <img src="./images/round.png" alt="pop-it round">
+                    <p class="title_card">Multicolored round</p>
+                    <button class="btn-card-buy">BUY</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sezione regole del gioco -->
+        <div class="content-rules">
+            <!-- Testo delle regole -->
+            <div>
+                <h3 class="title-rules">Rules of the game</h3>
+                <p class="text-rules">Players take turns and click on the bumps. It is imperative to finish the row that your
+                    started. You can press a maximum of 3 bubbles at the same time (they must be near,
+                    you cannot press several pimples at once, if they are not close to each other) The task
+                    is to make the opponent go last. Who went last - he lost!
+                </p>
+            </div>
+            <!-- Immagine illustrativa delle regole -->
+            <div class="rules-img">
+                <img src="./images/photo.jpg" alt="Illustrazione regole del gioco">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer della pagina -->
+    <footer>
+        <div class="content-footer">
+            <!-- Logo nel footer -->
+            <div class="footer-logo">
+                <p>NOT_A_BUBBLE.COM</p>
+            </div>
+            <!-- Menu del footer -->
+            <ul class="footer-menu">
+                <li><a href="#">Payment Methods</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Wholesale</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Collegamento al file JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,438 @@
+* {
+    margin: 0; /* Rimuove il margine predefinito */
+    padding: 0; /* Rimuove il padding predefinito */
+    list-style-type: none; /* Rimuove i punti dalle liste */
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+    box-sizing: border-box; /* Include padding e border nelle dimensioni totali */
+}
+
+html {
+    font-size: 16px; /* Imposta la dimensione del font base */
+    font-family: "Roboto", serif; /* Imposta il font */
+}
+
+header {
+    display: flex; /* Utilizza Flexbox per il layout */
+    align-items: center; /* Allinea verticalmente al centro */
+    justify-content: space-between; /* Spazia gli elementi */
+    padding: 2rem; /* Padding attorno all'header */
+    background-color: #FC2E20; /* Colore di sfondo dell'header */
+}
+
+.content-logo {
+    margin-left: 200px; /* Margine a sinistra per il logo */
+    align-items: start; /* Allinea gli elementi all'inizio */
+    font-weight: 800; /* Imposta il peso del font */
+}
+
+.logo {
+    font-size: 1.2rem; /* Dimensione del font per il logo */
+}
+
+.logo:hover {
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+}
+
+.nav-list {
+    margin-right: 200px; /* Margine a destra per la lista di navigazione */
+    list-style-type: none; /* Rimuove i punti dalle liste */
+    display: flex; /* Utilizza Flexbox per il layout della lista */
+    gap: 1rem; /* Spaziatura tra gli elementi della lista */
+}
+
+.nav-list li a {
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+    color: #1c1c1c; /* Colore del testo per i link */
+    font-weight: 800; /* Imposta il peso del font */
+    margin-right: 2rem; /* Margine a destra per i link */
+    transition: color 0.3s ease; /* Transizione per il cambio di colore */
+}
+
+.nav-list li a:hover {
+    color: #fff; /* Colore del testo al passaggio del mouse */
+}
+
+.open-menu,
+.close-menu {
+    display: none; /* Nasconde i pulsanti di apertura e chiusura del menu */
+}
+
+#hero {
+    width: 100%; /* Larghezza del contenitore hero */
+    height: 100vh; /* Altezza del contenitore hero */
+    background-color: #FC2E20; /* Colore di sfondo del hero */
+    background-image: url("../images/background2.png"); /* Immagine di sfondo */
+    background-repeat: no-repeat; /* Non ripete l'immagine di sfondo */
+    background-position: center; /* Posiziona l'immagine di sfondo al centro */
+    color: #fff; /* Colore del testo */
+}
+
+.container {
+    height: 100%; /* Altezza del contenitore */
+    padding: .1px; /* Padding interno (minimo) */
+    max-width: 1000px; /* Larghezza massima del contenitore */
+    margin-left: 200px; /* Margine a sinistra per il contenitore */
+}
+
+.container .info h1 {
+    font-size: 12rem; /* Dimensione del font per il titolo */
+    margin-top: 14rem; /* Margine superiore per il titolo */
+    margin-bottom: 1rem; /* Margine inferiore per il titolo */
+}
+
+.container .info p {
+    width: 700px; /* Larghezza del paragrafo */
+    font-size: 2.5rem; /* Dimensione del font per il paragrafo */
+    margin-bottom: 2rem; /* Margine inferiore per il paragrafo */
+}
+
+.btn-buy {
+    padding: 15px 120px; /* Padding per il bottone */
+    border: 0; /* Rimuove il bordo del bottone */
+    background-color: #9CFC50; /* Colore di sfondo del bottone */
+    font-size: 2rem; /* Dimensione del font per il bottone */
+    color: #000; /* Colore del testo del bottone */
+    font-weight: 600; /* Imposta il peso del font */
+    margin-top: 4rem; /* Margine superiore per il bottone */
+    transition: background-color 0.3s ease; /* Transizione per il cambio di colore */
+}
+
+.btn-buy:hover {
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    background-color: #FE7F20; /* Colore di sfondo al passaggio del mouse */
+}
+
+/* Sezione generale */
+.about {
+    background-color: #f9f9f9; /* Colore chiaro di sfondo */
+    padding: 150px 20px; /* Padding per la sezione About */
+    text-align: center; /* Allinea il testo al centro */
+}
+
+/* Contenuto interno */
+.content-about {
+    max-width: 800px; /* Larghezza massima per il contenuto About */
+    margin: 0 auto; /* Allinea al centro */
+}
+
+/* Titolo */
+.content-about h3 {
+    font-size: 2rem; /* Dimensione del font per il titolo */
+    color: #333; /* Colore del titolo */
+    margin-bottom: 20px; /* Margine inferiore per il titolo */
+    font-weight: bold; /* Imposta il peso del font */
+}
+
+/* Paragrafo */
+.content-about p {
+    font-size: 1rem; /* Dimensione del font per il paragrafo */
+    color: #555; /* Colore del testo del paragrafo */
+    line-height: 1.6; /* Altezza della linea */
+    margin: 0; /* Rimuove il margine */
+}
+
+.choose {
+    background-color: #9CFC50; /* Colore di sfondo per la sezione choose */
+    padding: 0.1px; /* Padding minimo per la sezione choose */
+    height: 700px; /* Altezza per la sezione choose */
+}
+
+.row {
+    display: flex; /* Utilizza Flexbox per il layout della riga */
+    justify-content: center; /* Allinea al centro */
+    gap: 250px; /* Spaziatura tra gli elementi della riga */
+}
+
+.title-choose {
+    font-size: 2rem; /* Dimensione del font per il titolo choose */
+    font-weight: 800; /* Imposta il peso del font */
+    text-align: center; /* Allinea il testo al centro */
+    margin-top: 80px; /* Margine superiore per il titolo choose */
+    padding: 60px; /* Padding attorno al titolo choose */
+}
+
+.card {
+    width: 250px; /* Larghezza della card */
+    height: 300px; /* Altezza della card */
+    display: flex; /* Utilizza Flexbox per il layout della card */
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    justify-content: center; /* Allinea al centro verticalmente */
+    align-items: center; /* Allinea al centro orizzontalmente */
+    color: #fff; /* Colore del testo nella card */
+}
+
+.card img {
+    width: 200px; /* Larghezza dell'immagine nella card */
+}
+
+.title_card {
+    width: 300px; /* Larghezza del titolo della card */
+    padding: 20px; /* Padding per il titolo della card */
+    color: #000; /* Colore del titolo della card */
+    font-size: 1.5rem; /* Dimensione del font per il titolo della card */
+    text-align: center; /* Allinea il testo al centro */
+    font-weight: 800; /* Imposta il peso del font */
+}
+
+.btn-card-buy {
+    background-color: #FE7F20; /* Colore di sfondo del bottone della card */
+    border: 0; /* Rimuove il bordo del bottone */
+    padding: 15px 60px; /* Padding per il bottone della card */
+    font-size: 1.2rem; /* Dimensione del font per il bottone della card */
+    font-weight: 800; /* Imposta il peso del font */
+    transition: background-color 0.3s ease; /* Transizione per il cambio di colore */
+}
+
+.btn-card-buy:hover {
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    background-color: #FC2E20; /* Colore di sfondo al passaggio del mouse */
+}
+
+.content-rules {
+    display: flex; /* Utilizza Flexbox per il layout della sezione delle regole */
+    justify-content: center; /* Allinea al centro */
+    align-items: center; /* Allinea al centro verticalmente */
+    gap: 40px; /* Spaziatura tra gli elementi della sezione regole */
+    padding: 200px; /* Padding per la sezione regole */
+    background-image: url("../images/bg-grid2.png"); /* Immagine di sfondo per la sezione regole */
+    background-repeat: no-repeat; /* Non ripete l'immagine di sfondo */
+    background-position: center; /* Posiziona l'immagine di sfondo al centro */
+}
+
+.title-rules {
+    font-size: 2.5rem; /* Dimensione del font per il titolo delle regole */
+    margin-bottom: 40px; /* Margine inferiore per il titolo delle regole */
+    color: #FC2E20; /* Colore del titolo delle regole */
+}
+
+.text-rules {
+    font-size: 1.7rem; /* Dimensione del font per il testo delle regole */
+    margin-bottom: 150px; /* Margine inferiore per il button */
+}
+.rules-img img {
+    width: 500px; /* Imposta la larghezza dell'immagine a 500px */
+    margin-bottom: 100px; /* Aggiunge un margine inferiore di 100px */
+}
+
+footer {
+    background-color: #333; /* Colore di sfondo del footer */
+    color: #fff; /* Colore del testo nel footer */
+    padding: 20px 20px; /* Padding attorno al footer */
+}
+
+.content-footer {
+    display: flex; /* Utilizza Flexbox per il layout del footer */
+    flex-direction: row; /* Allinea gli elementi in riga */
+    justify-content: space-between; /* Spazia gli elementi equamente */
+    align-items: center; /* Allinea verticalmente al centro */
+    margin: 0 auto; /* Centra il contenuto */
+    padding: 40px 0; /* Padding verticale per il contenuto del footer */
+}
+
+.footer-logo p {
+    font-size: 1.5em; /* Dimensione del font per il testo del logo */
+    font-weight: bold; /* Imposta il peso del font su bold */
+    margin-left: 200px; /* Aggiunge un margine a sinistra di 200px */
+}
+
+.footer-logo p:hover {
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+}
+
+.footer-menu {
+    list-style: none; /* Rimuove i punti dalla lista */
+    padding: 0; /* Rimuove il padding predefinito */
+    margin: 0; /* Rimuove il margine predefinito */
+    display: flex; /* Utilizza Flexbox per il layout del menu */
+    gap: 200px; /* Spaziatura di 200px tra gli elementi del menu */
+    margin-right: 200px; /* Aggiunge un margine a destra di 200px */
+}
+
+.footer-menu li a {
+    color: #fff; /* Colore del testo per i link nel menu del footer */
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+    font-size: 1.5em; /* Dimensione del font per i link nel menu */
+    transition: color 0.3s ease; /* Transizione per il cambio di colore */
+}
+
+.footer-menu li a:hover {
+    color: #FE7F20; /* Colore del testo al passaggio del mouse */
+}
+
+
+@media only screen and (max-width: 768px) { /* Media query per dispositivi con larghezza massima di 768px */
+    html {
+        font-size: 10px; /* Imposta la dimensione del font a 10px per schermi piccoli */
+    }
+
+    nav {
+        display: none; /* Nasconde il menu di navigazione */
+    }
+
+    .logo {
+        font-size: 2rem; /* Dimensione del font per il logo */
+    }
+
+    .logo a {
+        margin-left: 20px; /* Aggiunge margine a sinistra per il link del logo */
+    }
+
+    .content-logo {
+        margin-left: 0; /* Rimuove il margine sinistro per il contenuto del logo */
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block; /* Mostra i pulsanti di apertura e chiusura del menu */
+        border: 0; /* Rimuove il bordo dai pulsanti */
+        font-size: 2rem; /* Dimensione del font per i pulsanti */
+        background-color: transparent; /* Sfondo trasparente per i pulsanti */
+        cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    }
+
+    .open-menu {
+        color: #1c1c1c; /* Colore del testo per il pulsante di apertura */
+        margin-right: 20px; /* Aggiunge margine a destra */
+        font-size: 2.5rem; /* Dimensione del font per il pulsante di apertura */
+    }
+
+    .close-menu {
+        color: #fff; /* Colore del testo per il pulsante di chiusura */
+        margin-right: 20px; /* Margine destro per il bottone di chiusura */
+    }
+
+    .nav {
+        width: 170px; /* Larghezza del menu di navigazione */
+        display: flex; /* Utilizza Flexbox per il layout del menu */
+        flex-direction: column; /* Allinea gli elementi del menu in colonna */
+        align-items: end; /* Allinea gli elementi a destra */
+        position: absolute; /* Posizione assoluta per sovrapporre il menu */
+        margin-right: 0; /* Rimuove il margine a destra */
+        gap: 1rem; /* Spaziatura tra gli elementi del menu */
+        top: 0; /* Posiziona il menu in alto */
+        right: 0; /* Posiziona il menu a destra */
+        bottom: 0; /* Estende il menu fino in fondo */
+        background-color: #FE7F20; /* Colore di sfondo del menu */
+        padding: 2rem; /* Padding attorno al contenuto del menu */
+        opacity: 0; /* Inizialmente rende il menu invisibile */
+        visibility: hidden; /* Impedisce l'interazione con il menu */
+        transform: translateX(100%); /* Nasconde il menu a destra */
+        transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s 0.5s; /* Transizione per l'apertura e la chiusura */
+    }
+
+    .nav.visible {
+        opacity: 1; /* Rende il menu visibile */
+        visibility: visible; /* Permette l'interazione con il menu */
+        transform: translateX(0); /* Fa scorrere il menu all'interno */
+        transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s 0s; /* Transizione per rendere il menu visibile */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Allinea gli elementi della lista in colonna */
+        align-items: end; /* Allinea gli elementi a destra */
+        margin-top: 50px; /* Aggiunge margine superiore */
+        margin-right: 0; /* Rimuove il margine a destra */
+        font-size: 2rem; /* Dimensione del font per gli elementi della lista */
+    }
+
+    .nav-list li a {
+        color: #fff; /* Colore del testo per i link nel menu */
+    }
+
+    .nav-list li a:hover {
+        color: #000; /* Colore del testo al passaggio del mouse */
+    }
+
+    .container {
+        margin-left: 20px; /* Aggiunge margine sinistro alla container */
+    }
+
+    .container .info h1 {
+        font-size: 8rem; /* Dimensione del font per il titolo */
+    }
+
+    .container .info p {
+        width: 250px; /* Larghezza del paragrafo */
+        font-size: 2.5rem; /* Dimensione del font per il paragrafo */
+        margin-bottom: 2rem; /* Margine inferiore per il paragrafo */
+    }
+
+    .btn-buy {
+        padding: 15px 80px; /* Padding attorno al bottone */
+        border: 0; /* Rimuove il bordo dal bottone */
+        background-color: #9CFC50; /* Colore di sfondo per il bottone */
+        font-size: 2rem; /* Dimensione del font per il bottone */
+        color: #000; /* Colore del testo per il bottone */
+        font-weight: 600; /* Peso del font per il bottone */
+        margin-top: 4rem; /* Aggiunge margine superiore per il bottone */
+    }
+
+    .content-about h3 {
+        font-size: 3rem; /* Dimensione del font per il titolo nella sezione "about" */
+    }
+
+    .content-about p {
+        font-size: 1.5rem; /* Dimensione del font per il paragrafo nella sezione "about" */
+    }
+
+    .choose {
+        height: 100%; /* Imposta l'altezza al 100% */
+    }
+
+    .row {
+        flex-direction: column; /* Allinea le card in colonna */
+        align-items: center; /* Allinea al centro */
+        gap: 1rem; /* Spaziatura tra le card */
+        margin-bottom: 100px; /* Margine inferiore per la riga di card */
+    }
+
+    .card {
+        width: 90%; /* Modifica la larghezza per adattarsi meglio agli schermi piccoli */
+        margin-bottom: 1rem; /* Aggiunge margine inferiore per la card */
+    }
+
+    .content-rules {
+        flex-direction: column; /* Allinea il contenuto delle regole in colonna */
+        padding: 40px; /* Padding attorno al contenuto delle regole */
+    }
+
+    .title-rules {
+        font-size: 2.5rem; /* Dimensione del font per il titolo delle regole */
+    }
+
+    .text-rules {
+        font-size: 1.7rem; /* Dimensione del font per il testo delle regole */
+        margin-bottom: 0; /* Rimuove il margine inferiore */
+    }
+
+    .rules-img img {
+        width: 500px; /* Larghezza dell'immagine delle regole */
+        margin-bottom: 0; /* Rimuove il margine inferiore per l'immagine */
+    }
+
+    footer {
+        padding: 0; /* Rimuove il padding attorno al footer */
+    }
+
+    .content-footer {
+        flex-direction: column; /* Allinea il contenuto del footer in colonna */
+        text-align: center; /* Centra il testo nel footer */
+    }
+
+    .footer-logo {
+        margin-bottom: 1rem; /* Aggiunge margine inferiore per il logo nel footer */
+    }
+
+    .footer-logo p {
+        margin-left: 0; /* Rimuove il margine sinistro per il paragrafo del logo */
+        margin-bottom: 40px; /* Aggiunge margine inferiore per il paragrafo del logo */
+    }
+
+    .footer-menu {
+        flex-direction: column; /* Allinea gli elementi del menu del footer in colonna */
+        gap: 2rem; /* Spaziatura tra gli elementi del menu del footer */
+        margin-right: 0; /* Rimuove il margine a destra */
+    }
+}
+
+
