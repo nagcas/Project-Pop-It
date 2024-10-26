@@ -1,5 +1,7 @@
 # 🌐 Pop It Tutor
 
+Questo è il link online (https://project-pop-it.vercel.app/)
+
 👋 Questo è un progetto pratico realizzato. L'obiettivo principale era quello di creare un sito web di qualità, seguendo alcune linee guida specifiche.
 
 ## Obiettivi del progetto 🎯
